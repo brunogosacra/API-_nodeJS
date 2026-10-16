@@ -1,0 +1,67 @@
+### Extensão "REST Client" (humao.rest-client) no VS Code: clique em "Send Request"
+
+### Tarefas
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/tarefas
+
+###
+GET http://localhost:3000/tarefas/1
+
+###
+GET http://localhost:3000/tarefas/99
+
+###
+POST http://localhost:3000/tarefas
+Content-Type: application/json
+
+{ "titulo": "Revisar rotas" }
+
+###
+POST http://localhost:3000/tarefas
+Content-Type: application/json
+
+{ "titulo": "" }
+
+###
+PUT http://localhost:3000/tarefas/1
+Content-Type: application/json
+
+{ "concluida": true }
+
+###
+DELETE http://localhost:3000/tarefas/2
+
+###
+GET http://localhost:3000/buscar?termo=node
+
+### Livros (rode antes: node livros.js)
+GET http://localhost:3000/livros
+
+###
+GET http://localhost:3000/livros/1
+
+###
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{ "titulo": "O Cortiço", "autor": "Aluísio Azevedo" }
+
+###
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{ "titulo": "Sem autor" }
+
+###
+PUT http://localhost:3000/livros/1
+Content-Type: application/json
+
+{ "autor": "Machado de Assis (edição revisada)" }
+
+###
+DELETE http://localhost:3000/livros/2
+
+###
+GET http://localhost:3000/buscar?termo=machado

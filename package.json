@@ -1,0 +1,19 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "Aula de Node.js: servidor, rotas e API com Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "app": "node app.js",
+    "livros": "node livros.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

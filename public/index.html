@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cartao">
+    <header>
+      <h1>Minhas tarefas</h1>
+      <p class="subtitulo">Front-end da API Node.js + Express</p>
+    </header>
+
+    <form id="form-tarefa" class="form">
+      <input id="titulo" type="text" placeholder="Nova tarefa..." autocomplete="off" required>
+      <button type="submit" class="btn btn-primario">Adicionar</button>
+    </form>
+
+    <p id="erro" class="erro" role="alert" hidden></p>
+
+    <nav class="filtros" aria-label="Filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="pendentes">Pendentes</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </nav>
+
+    <ul id="lista" class="lista"></ul>
+    <p id="vazio" class="vazio" hidden>Nenhuma tarefa por aqui.</p>
+
+    <footer>
+      <span id="contador">0 tarefas</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
